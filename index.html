@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- index css -->
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Ascent</title>
+  </head>
+  <body class="font-[nunito]">
+    <header
+      class="z-50 header-body sticky top-0 w-full transition-all duration-300 bg-white"
+    >
+      <!-- header top -->
+      <div
+        class="header-top relative xl:py-0 py-[20px] hidden text-white bg-destructive w-full lg:flex md:flex transition-all duration-300"
+      >
+        <div class="container m-auto">
+          <div
+            class="max-w-[1280px] m-auto informations flex w-full lg:justify-between md:flex-wrap md:justify-center xl:items-center"
+          >
+            <!-- infor left -->
+            <div class="infor-left flex justify-between items-center xl:py-4">
+              <div class="infor-icon px-4">
+                <a href="#"
+                  ><i class="fa-solid fa-phone" aria-hidden="true"></i
+                ></a>
+                <a href="#"><span class="pl-3">(629) 555-0129</span></a>
+              </div>
+              <div class="infor-icon px-4">
+                <a href=""
+                  ><i class="fa-solid fa-envelope" aria-hidden="true"></i
+                ></a>
+                <a href=""><span class="pl-3">info@example.com</span></a>
+              </div>
+              <div class="infor-icon px-4">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <span class="pl-3"> 6391 Elgin St. Celina, 10299</span>
+              </div>
+            </div>
+            <!-- infor right -->
+            <div class="infor-right xl:py-2 md:pt-2 md:space-x-0">
+              <ul class="flex">
+                <li class="px-3">
+                  <a
+                    href="#"
+                    class="w-6 h-6 rounded-md border border-white border-opacity-20 text-xs flex justify-center justify-items-center items-center hover:bg-primary duration-300"
+                    ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="px-3">
+                  <a
+                    href="#"
+                    class="w-6 h-6 rounded-md border border-white border-opacity-20 text-xs flex justify-center justify-items-center items-center hover:bg-primary duration-300"
+                    ><i class="fa-brands fa-x-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="px-3">
+                  <a
+                    href="#"
+                    class="w-6 h-6 rounded-md border border-white border-opacity-20 text-xs flex justify-center justify-items-center items-center hover:bg-primary duration-300"
+                    ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="px-3">
+                  <a
+                    href="#"
+                    class="w-6 h-6 rounded-md border border-white border-opacity-20 text-xs flex justify-center justify-items-center items-center hover:bg-primary duration-300"
+                    ><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header menu -->
+      <div
+        class="header-menu relative md:w-full transition-all duration-300 top-0 py-7 justify-between items-center justify-items-center wow"
+        data-wow-duration="1s"
+      >
+        <div class="container m-auto">
+          <!-- header menu -->
+          <div
+            class="max-w-[1280px] m-auto header-menu-block flex justify-between"
+          >
+            <div class="menu-logo flex items-center">
+              <figure>
+                <img src="./imgs/logo.png" alt="#" srcset="" />
+              </figure>
+              <p class="text-3xl ml-1 font-bold">Ascent</p>
+            </div>
+            <div
+              class="menu-right md:flex justify-center justify-items-center items-center"
+            >
+              <nav class="xl:flex">
+                <ul
+                  class="list-menu md:hidden lg:hidden xl:flex font-bold space-x-10 hidden"
+                >
+                  <li
+                    class="relative item group transition-all duration-500 hover:text-bgOrange"
+                  >
+                    <a href="#"
+                      >Home
+                      <i
+                        class="fa-solid fa-angle-down text-sm"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                    <!-- sub menu -->
+                    <ul
+                      class="z-100 bg-white absolute top-12 submenu group-hover:visible group-hover:opacity-100 opacity-0 invisible transition-all duration-500 min-w-56"
+                    >
+                      <li
+                        class="subitem group/item hover:bg-bgOrange transition-all duration-500"
+                      >
+                        <a
+                          class="inline-block text-black group-hover/item:text-white transition-all duration-500 py-3 px-3 z-100 border-bdColor opacity-100"
+                          href="#"
+                          >Home-1
+                        </a>
+                      </li>
+                      <li
+                        class="subitem group/item hover:bg-bgOrange transition-all duration-500"
+                      >
+                        <a
+                          class="inline-block text-black group-hover/item:text-white transition-all duration-500 py-3 px-3 z-100 border-bdColor opacity-100"
+                          href="#"
+                          >Home-2</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="hover:text-bgOrange transition-all duration-500">
+                    <a href="#">About Us</a>
+                  </li>
+                  <li
+                    class="relative item group hover:text-bgOrange transition-all duration-500"
+                  >
+                    <a href="#"
+                      >Services
+                      <i
+                        class="fa-solid fa-angle-down text-sm"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                    <!-- sub menu -->
+                    <ul
+                      class="z-100 bg-white absolute top-12 submenu group-hover:visible group-hover:opacity-100 opacity-0 invisible transition-all duration-500 min-w-56"
+                    >
+                      <li
+                        class="subitem group/item hover:bg-bgOrange transition-all duration-500"
+                      >
+                        <a
+                          class="inline-block text-black group-hover/item:text-white transition-all duration-500 py-3 px-3 z-100 border-bdColor opacity-100"
+                          href="#"
+                          >Services
+                        </a>
+                      </li>
+                      <li
+                        class="subitem group/item hover:bg-bgOrange transition-all duration-500"
+                      >
+                        <a
+                          class="inline-block text-black group-hover/item:text-white transition-all duration-500 py-3 px-3 z-100 border-bdColor opacity-100"
+                          href="#"
+                          >Services-detail</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class="relative item group hover:text-bgOrange transition-all duration-500"
+                  >
+                    <a href="#"
+                      >Blog
+                      <i
+                        class="fa-solid fa-angle-down text-sm"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                    <!-- sub menu -->
+                    <ul
+                      class="z-100 bg-white absolute top-12 submenu group-hover:visible group-hover:opacity-100 opacity-0 invisible transition-all duration-500 min-w-56"
+                    >
+                      <li
+                        class="subitem group/item hover:bg-bgOrange transition-all duration-500"
+                      >
+                        <a
+                          class="inline-block text-black group-hover/item:text-white transition-all duration-500 py-3 px-3 z-100 border-bdColor opacity-100"
+                          href="#"
+                          >Blog
+                        </a>
+                      </li>
+                      <li
+                        class="subitem group/item hover:bg-bgOrange transition-all duration-500"
+                      >
+                        <a
+                          class="inline-block text-black group-hover/item:text-white transition-all duration-500 py-3 px-3 z-100 border-bdColor opacity-100"
+                          href="#"
+                          >Blog-detail</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class="relative item group hover:text-bgOrange transition-all duration-500"
+                  >
+                    <a href="#"
+                      >Page
+                      <i
+                        class="fa-solid fa-angle-down text-sm"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                    <!-- sub menu -->
+                    <ul
+                      class="z-100 bg-white absolute top-12 submenu group-hover:visible group-hover:opacity-100 opacity-0 invisible transition-all duration-500 min-w-56"
+                    >
+                      <li
+                        class="subitem group/item hover:bg-bgOrange transition-all duration-500"
+                      >
+                        <a
+                          class="inline-block text-black group-hover/item:text-white transition-all duration-500 py-3 px-3 z-100 border-bdColor opacity-100"
+                          href="#"
+                          >About
+                        </a>
+                      </li>
+                      <li
+                        class="subitem group/item hover:bg-bgOrange transition-all duration-500"
+                      >
+                        <a
+                          class="inline-block text-black group-hover/item:text-white transition-all duration-500 py-3 px-3 z-100 border-bdColor opacity-100"
+                          href="#"
+                          >Services</a
+                        >
+                      </li>
+                      <li
+                        class="subitem group/item hover:bg-bgOrange transition-all duration-500"
+                      >
+                        <a
+                          class="inline-block text-black group-hover/item:text-white transition-all duration-500 py-3 px-3 z-100 border-bdColor opacity-100"
+                          href="#"
+                          >Services-detail</a
+                        >
+                      </li>
+                      <li
+                        class="subitem group/item hover:bg-bgOrange transition-all duration-500"
+                      >
+                        <a
+                          class="inline-block text-black group-hover/item:text-white transition-all duration-500 py-3 px-3 z-100 border-bdColor opacity-100"
+                          href="#"
+                          >Faq</a
+                        >
+                      </li>
+                      <li
+                        class="subitem group/item hover:bg-bgOrange transition-all duration-500"
+                      >
+                        <a
+                          class="inline-block text-black group-hover/item:text-white transition-all duration-500 py-3 px-3 z-100 border-bdColor opacity-100"
+                          href="#"
+                          >Porfolio</a
+                        >
+                      </li>
+                      <li
+                        class="subitem group/item hover:bg-bgOrange transition-all duration-500"
+                      >
+                        <a
+                          class="inline-block text-black group-hover/item:text-white transition-all duration-500 py-3 px-3 z-100 border-bdColor opacity-100"
+                          href="#"
+                          >Contact</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class="px-5 hover:text-bgOrange transition-all duration-500"
+                  >
+                    <a href="#">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+              <div
+                class="menu-button flex ml-10 justify-center justify-items-center items-center"
+              >
+                <!-- icon search -->
+                <div class="icon-search">
+                  <a
+                    href="#"
+                    onclick="handleClickToOpen()"
+                    class="cursor-default"
+                    ><i
+                      class="fa-solid fa-magnifying-glass"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </div>
+                <!-- icon menu bar -->
+                <a
+                  class="btnGetAQuote hidden md:block ml-2 bg-secondary text-white py-4 px-10 rounded-lg btn after:bg-bgBtn"
+                  href="#"
+                  >Get A Quote</a
+                >
+                <!-- icon menu bar -->
+                <div
+                  class="icon-menu-bar flex flex-col gap-2 items-end ml-3 px-3 xl:hidden md:flex lg:flex"
+                  onclick="handleOpenHiddenMenuRight()"
+                >
+                  <p class="block h-[3px] bg-black w-5"></p>
+                  <p class="block h-[3px] bg-black w-8"></p>
+                  <p class="block h-[3px] bg-black w-5"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- header form search -->
+        <form
+          action="#"
+          id="form-input"
+          class="w-full h-full absolute z-10 top-0 transition-all duration-500 opacity-100 invisible"
+        >
+          <input
+            type="text"
+            id="btnSearch"
+            placeholder="Search here"
+            class="w-full h-full px-10 outline-none border border-gray-400 rounded-lg"
+          />
+          <label
+            for="btnSearch"
+            class="absolute right-14 bottom-10"
+            onclick="handleClickToClose()"
+            ><i
+              class="fa-solid fa-xmark border-gray-400 text-xl"
+              aria-hidden="true"
+            ></i
+          ></label>
+        </form>
+      </div>
+      <!-- header hidden right -->
+      <div
+        class="over-play fixed -z-50 bg-black/30 right-0 top-0 w-screen h-screen hidden"
+      ></div>
+      <div
+        class="text-[#385469] fixed z-50 header-hidden-right min-h-screen max-w-md xl:hidden hidden w-full h-screen sm:h-screen md:h-screen lg:h-screen top-0 right-0 bg-warm border-l-orange-500 border-l-2 transition-all duration-1000 wow animate__animated animate__slideInRight overflow-y-auto"
+        data-wow-duration="1s"
+      >
+        <div class="w-[80%] absolute top-10 right-10 m m-auto">
+          <div class="hidden-top flex justify-between">
+            <div class="logo-hidden flex items-center gap-1">
+              <img src="../imgs/logo.png" alt="#" srcset="" />
+              <p class="text-3xl font-bold">Ascent</p>
+            </div>
+            <div
+              class="icon-x w-10 h-10 bg-orange-400 rounded-md grid place-items-center"
+              onclick="handleCloseHiddenMenuRight()"
+            >
+              <i
+                class="fa-solid fa-xmark text-xl text-white"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </div>
+          <!-- bottom menu -->
+          <div class="bottom-menu py-5">
+            <ul class="sub-menu-bottom space-y-5">
+              <!-- home -->
+              <li
+                class="relative group/home transition-all duration-500 dropdown"
+                onclick="handleClickToOpenHiddenMenuHome()"
+              >
+                <a
+                  href="#"
+                  class="border-b border-b-slate-300 flex justify-between items-center"
+                >
+                  <span class="py-2">Home</span>
+                  <i
+                    class="fa-solid fa-plus transition-all duration-500"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <ul
+                  class="sub-bottom-menu-home max-h-0 invisible transition-all duration-500 opacity-0 w-full"
+                >
+                  <li
+                    class="hover:text-hoverText cursor-pointer pl-5 leading-9 border-b border-b-slate-300 flex justify-between items-center"
+                  >
+                    Home-1
+                  </li>
+                  <li
+                    class="hover:text-hoverText cursor-pointer pl-5 leading-9 border-b border-b-slate-300 flex justify-between items-center"
+                  >
+                    Home-2
+                  </li>
+                </ul>
+              </li>
+              <!-- about -->
+              <li
+                class="relative transition-all duration-500"
+                style="margin: 0"
+              >
+                <a
+                  href="#"
+                  class="border-b border-b-slate-300 flex justify-between items-center"
+                >
+                  <span class="py-2">About Us</span>
+                </a>
+              </li>
+              <!-- services -->
+              <li
+                class="relative group/home transition-all duration-500 dropdown"
+                style="margin: 0"
+                onclick="handleClickToOpenHiddenMenuServices()"
+              >
+                <a
+                  href="#"
+                  class="border-b border-b-slate-300 flex justify-between items-center"
+                >
+                  <span class="py-2">Services</span>
+                  <i
+                    class="fa-solid fa-plus transition-all duration-500"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <ul
+                  class="sub-bottom-menu-services max-h-0 invisible transition-all duration-500 opacity-0 w-full"
+                >
+                  <li
+                    class="hover:text-hoverText cursor-pointer pl-5 leading-9 border-b border-b-slate-300 flex justify-between items-center"
+                  >
+                    Services
+                  </li>
+                  <li
+                    class="hover:text-hoverText cursor-pointer pl-5 leading-9 border-b border-b-slate-300 flex justify-between items-center"
+                  >
+                    Services Details
+                  </li>
+                </ul>
+                <!-- blog -->
+              </li>
+
+              <li
+                class="relative group/home transition-all duration-500 dropdown"
+                style="margin: 0"
+                onclick="handleClickToOpenHiddenMenuBlog()"
+              >
+                <a
+                  href="#"
+                  class="border-b border-b-slate-300 flex justify-between items-center"
+                >
+                  <span class="py-2">Blog</span>
+                  <i
+                    class="fa-solid fa-plus transition-all duration-500"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <ul
+                  class="sub-bottom-menu-blog max-h-0 invisible transition-all duration-500 opacity-0 w-full"
+                >
+                  <li
+                    class="hover:text-hoverText cursor-pointer pl-5 leading-9 border-b border-b-slate-300 flex justify-between items-center"
+                  >
+                    Blog
+                  </li>
+                  <li
+                    class="hover:text-hoverText cursor-pointer pl-5 leading-9 border-b border-b-slate-300 flex justify-between items-center"
+                  >
+                    Blog Details
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Page -->
+              <li
+                class="relative group/home transition-all duration-500 dropdown"
+                style="margin: 0"
+                onclick="handleClickToOpenHiddenMenuPage()"
+              >
+                <a
+                  href="#"
+                  class="border-b border-b-slate-300 flex justify-between items-center"
+                >
+                  <span class="py-2">Page</span>
+                  <i
+                    class="fa-solid fa-plus transition-all duration-500"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <ul
+                  class="sub-bottom-menu-page max-h-0 invisible transition-all duration-500 opacity-0 w-full"
+                >
+                  <li
+                    class="hover:text-hoverText cursor-pointer pl-5 leading-9 border-b border-b-slate-300 flex justify-between items-center"
+                  >
+                    About
+                  </li>
+                  <li
+                    class="hover:text-hoverText cursor-pointer pl-5 leading-9 border-b border-b-slate-300 flex justify-between items-center"
+                  >
+                    Services
+                  </li>
+                  <li
+                    class="hover:text-hoverText cursor-pointer pl-5 leading-9 border-b border-b-slate-300 flex justify-between items-center"
+                  >
+                    Services Details
+                  </li>
+                  <li
+                    class="hover:text-hoverText cursor-pointer pl-5 leading-9 border-b border-b-slate-300 flex justify-between items-center"
+                  >
+                    Portfolio
+                  </li>
+                  <li
+                    class="hover:text-hoverText cursor-pointer pl-5 leading-9 border-b border-b-slate-300 flex justify-between items-center"
+                  >
+                    Faq's
+                  </li>
+                  <li
+                    class="hover:text-hoverText cursor-pointer pl-5 leading-9 border-b border-b-slate-300 flex justify-between items-center"
+                  >
+                    Contact
+                  </li>
+                </ul>
+              </li>
+              <!-- Contact Us -->
+              <li
+                class="relative transition-all duration-500"
+                style="margin: 0"
+              >
+                <a
+                  href="#"
+                  class="border-b border-b-slate-300 flex justify-between items-center"
+                >
+                  <span class="py-3 hover:text-hoverText cursor-pointer"
+                    >Contact Us</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-bottom">
+            <h3 class="text-xl font-bold">Contact Info</h3>
+            <div class="contact-infor space-y-3 pt-4">
+              <div class="infor-icon">
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-phone text-bgOrange"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+                <a href="#"><span class="pl-3">(629) 555-0129</span></a>
+              </div>
+              <div class="infor-icon">
+                <a href=""
+                  ><i
+                    class="fa-solid fa-envelope text-bgOrange"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+                <a href=""><span class="pl-3">info@example.com</span></a>
+              </div>
+              <div class="infor-icon">
+                <i
+                  class="fa-solid fa-location-dot text-bgOrange"
+                  aria-hidden="true"
+                ></i>
+                <span class="pl-3"> 6391 Elgin St. Celina, 10299</span>
+              </div>
+            </div>
+            <div class="contact-icon">
+              <ul class="flex pt-5 space-x-3 text-black">
+                <li class="">
+                  <a
+                    href="#"
+                    class="w-11 h-11 bg-white rounded-md border border-white border-opacity-20 text-base flex justify-center justify-items-center items-center hover:bg-primary duration-300"
+                    ><i class="fa-brands fa-facebook-f" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="">
+                  <a
+                    href="#"
+                    class="w-11 h-11 bg-white rounded-md border border-white border-opacity-20 text-base flex justify-center justify-items-center items-center hover:bg-primary duration-300"
+                    ><i class="fa-brands fa-x-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="">
+                  <a
+                    href="#"
+                    class="w-11 h-11 bg-white rounded-md border border-white border-opacity-20 text-base flex justify-center justify-items-center items-center hover:bg-primary duration-300"
+                    ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li class="">
+                  <a
+                    href="#"
+                    class="w-11 h-11 bg-white rounded-md border border-white border-opacity-20 text-base flex justify-center justify-items-center items-center hover:bg-primary duration-300"
+                    ><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="banner z-1" class="bg-warm">
+      <div class="container m-auto relative">
+        <div class="flex flex-col items-center text-center relative z-10 py-20">
+          <h1
+            class="font-normal xl:text-[70px] lg:text-6xl md:text-5xl text-4xl xl:leading-[128%] lg:leading-[125%] md:leading-[120%] max-w-[776px]"
+          >
+            <span class="relative"
+              >Exploring Minds
+              <span class="absolute w-10 h-10 -left-6 -top-2"
+                ><img src="./imgs/25659371 (1).png" alt="" srcset="" /></span
+            ></span>
+            <span class="font-bold">Elementary</span>
+            <span class="font-bold text-destructive">School</span>
+          </h1>
+
+          <div
+            class="flex absolute right-20 lg:right-20 xl:right-56 top-32 animate-skwe"
+          >
+            <img
+              src="imgs/shap.png"
+              alt="shap-2"
+              class="w-7 h-12 relative top-9"
+            />
+            <img src="imgs/shap.png" alt="shap-1" />
+            <img src="imgs/shap.png" alt="shap-2" class="w-5 h-8 -mt-7" />
+          </div>
+
+          <p class="pt-5 md:pt-0 max-w-[431px]">
+            Starting a corporate business typically involves several steps, such
+            as develo a business
+          </p>
+          <a
+            class="btnGetAQuote block ml-2 mt-5 bg-bgBtn text-white py-4 px-10 rounded-lg btn after:bg-secondary"
+            href="#"
+            >Learn more</a
+          >
+        </div>
+        <div
+          class="absolute left-20 md:left-3 md:top-28 lg:top-20 top-20 lg:max-w-full max-w-[200px] xl:left-32 sm:block hidden animate-up-down"
+        >
+          <img src="imgs/boy_img_1.png" alt="banner-img-1" />
+          <span
+            class="absolute left-3 top-[9px] border-2 border-primary rounded-[125px] w-full h-full"
+          ></span>
+        </div>
+      </div>
+      <div
+        class="absolute lg:right-0 lg:top-[35%] xl:right-[15%] xl:top-[60%] pb-[71px] lg:block hidden animate-up-down"
+      >
+        <img src="./imgs/boy_img_2.png" alt="banner-img-2" />
+        <span
+          class="absolute -left-2.5 top-[9px] border-2 border-secondary rounded-[125px] max-h-[369px] w-full h-full"
+        ></span>
+      </div>
+      <div class="xl:ml-[20%]">
+        <img src="imgs/painting.png" alt="painting" />
+      </div>
+      <div class="hidden lg:block">
+        <div class="absolute left-0 top-[190px] animate-left-right">
+          <img src="imgs/left-circle-1.png" alt="img" />
+        </div>
+        <div class="absolute left-[37px] top-[321px] animate-left-right">
+          <img src="imgs/left-circle-2.png" alt="img" />
+        </div>
+        <div
+          class="absolute lg:bottom-[45%] right-0 bottom-[165px] xl:top-[60%] animate-up-down"
+        >
+          <img src="imgs/right-circle.png" alt="img" />
+        </div>
+      </div>
+    </section>
+    <section id="number">
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </section>
+    <section id="about-us"></section>
+    <section id="programs"></section>
+    <section id="porfolio"></section>
+    <section id="service"></section>
+    <section id="faq"></section>
+    <section id="professional"></section>
+    <section id="knowledge"></section>
+    <section id="client"></section>
+    <section id="blog"></section>
+    <section id="connected"></section>
+    <section id="contact"></section>
+    <footer></footer>
+
+    <!-- script -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- wowjs -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <!-- fadedown menu when roll up -->
+    <script>
+      //rolling up menu
+      let lastScrollTop = 0;
+      const headerBody = document.querySelector(".header-body");
+      const headerMenu = document.querySelector(".header-menu");
+
+      window.addEventListener("scroll", function () {
+        let scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (window.innerWidth <= 640) {
+          if (scrollTop > lastScrollTop) {
+            // Scrolling down
+            headerBody.style.top = "-150px";
+          } else {
+            headerBody.style.top = "0";
+          }
+        } else if (window.innerWidth > 640 && window.innerWidth <= 820) {
+          if (scrollTop > lastScrollTop) {
+            // Scrolling down
+            headerBody.style.top = "-210px";
+          } else {
+            headerBody.style.top = "-100px";
+          }
+        } else if (window.innerWidth > 820 && window.innerWidth <= 1280) {
+          if (scrollTop > lastScrollTop) {
+            // Scrolling down
+            headerBody.style.top = "-200px";
+          } else {
+            headerBody.style.top = "-80px";
+          }
+        } else {
+          if (scrollTop > lastScrollTop) {
+            // Scrolling down
+            headerBody.style.top = "-220px";
+          } else {
+            headerBody.style.top = "-70px";
+          }
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+      });
+    </script>
+    <script src="./../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
