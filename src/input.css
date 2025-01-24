@@ -6,11 +6,25 @@ body {
   font-family: "Nunito", serif;
 }
 
+.font-bubble {
+  font-family: "Bubblegum Sans", cursive;
+}
+
+.font-jost {
+  font-family: "Jost", sans-serif;
+}
+
+.max-width-1280 {
+  max-width: 1280px;
+  margin: auto;
+}
+
 .btn {
   position: relative;
   z-index: 10;
   transition: all 0.5s;
   overflow: hidden;
+  border-color: rgb(229 231 235);
 }
 .btn::after {
   content: "";
@@ -78,4 +92,8 @@ body {
   50% {
     transform: skewX(5deg);
   }
+}
+
+.boxShadow {
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }

@@ -105,27 +105,60 @@ subHiddenMenuPage.style.visibility = "hidden";
 subHiddenMenuPage.style.opacity = "0";
 
 //Click to Open/Close hidden menu
-const headerHiddenRight = document.querySelector(".header-hidden-right");
-const headerHiddenOverPlay = document.querySelector(".over-play");
+// const headerHiddenRight = document.querySelector(".header-hidden-right");
+// const headerHiddenOverPlay = document.querySelector(".over-play");
 
-const handleOpenHiddenMenuRight = () => {
-  headerHiddenRight.classList.remove("hidden");
-  headerHiddenRight.classList.add("block");
-  headerHiddenRight.style.transform = "translateX(0)";
-  headerHiddenOverPlay.classList.remove("hidden");
-  headerHiddenOverPlay.classList.add("block");
-};
+// const handleOpenHiddenMenuRight = () => {
+//   headerHiddenRight.classList.remove("hidden");
+//   headerHiddenRight.classList.add("block");
+//   headerHiddenRight.style.transform = "translateX(0)";
+//   headerHiddenOverPlay.classList.remove("hidden");
+//   headerHiddenOverPlay.classList.add("block");
+// };
 
-const handleCloseHiddenMenuRight = () => {
-  headerHiddenRight.style.transform = "translateX(500px)";
-  setTimeout(() => {
-    headerHiddenRight.classList.remove("block");
-    headerHiddenRight.classList.add("hidden");
-  }, 1000); // Match the duration of the CSS transition
-  headerHiddenOverPlay.classList.remove("block");
-  headerHiddenOverPlay.classList.add("hidden");
-};
+// const handleCloseHiddenMenuRight = () => {
+//   headerHiddenRight.style.transform = "translateX(500px)";
+//   setTimeout(() => {
+//     headerHiddenRight.classList.remove("block");
+//     headerHiddenRight.classList.add("hidden");
+//   }, 1000); // Match the duration of the CSS transition
+//   headerHiddenOverPlay.classList.remove("block");
+//   headerHiddenOverPlay.classList.add("hidden");
+// };
 
-// Ensure initial state
-headerHiddenRight.classList.add("hidden");
-headerHiddenRight.style.transform = "translateX(500px)";
+// // Ensure initial state
+// headerHiddenRight.classList.add("hidden");
+// headerHiddenRight.style.transform = "translateX(500px)";
+$(".icon-menu-bar").click(function () {
+  var windowWidth = $(window).width();
+
+  $(".over-play").css("display") === "none"
+    ? $(".over-play").css("display", "block")
+    : $(".over-play").css("display", "none");
+
+  var leftPosition;
+  if (windowWidth < 760) {
+    leftPosition = "0";
+  } else if (windowWidth < 800) {
+    leftPosition = "42%";
+  } else if (windowWidth < 1000) {
+    leftPosition = "45%";
+  } else {
+    leftPosition = "56%";
+  }
+
+  $(".header-hidden-right")
+    .stop(true, true)
+    .delay(100)
+    .animate({ left: leftPosition }, 600); // Added delay
+});
+$(".icon-x").click(function () {
+  $(".header-hidden-right")
+    .stop(true, true)
+    .delay(100)
+    .animate({ left: "100%" }, 600); // Added delay
+
+  $(".over-play").css("display") === "block"
+    ? $(".over-play").css("display", "none")
+    : $(".over-play").css("display", "block");
+});
