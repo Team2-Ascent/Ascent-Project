@@ -1757,6 +1757,9 @@ video {
 
 body {
   font-family: "Nunito", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .font-bubble {
@@ -2033,16 +2036,12 @@ body {
     height: 100vh;
   }
 
-  .md\:w-\[85\%\] {
-    width: 85%;
+  .md\:w-\[80\%\] {
+    width: 80%;
   }
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-\[80\%\] {
-    width: 80%;
   }
 
   .md\:flex-col {
@@ -2127,16 +2126,16 @@ body {
     margin-bottom: 5rem;
   }
 
+  .lg\:mb-28 {
+    margin-bottom: 7rem;
+  }
+
   .lg\:mb-40 {
     margin-bottom: 10rem;
   }
 
   .lg\:mt-2 {
     margin-top: 0.5rem;
-  }
-
-  .lg\:mb-28 {
-    margin-bottom: 7rem;
   }
 
   .lg\:block {
