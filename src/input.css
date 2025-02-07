@@ -127,3 +127,38 @@ body {
     transform: translateX(14px);
   }
 }
+
+.footer-left {
+  animation: fadeInLeft_custom 1s linear;
+}
+
+.footer-right {
+  animation: fadeInRight_custom 1s linear;
+}
+
+@keyframes fadeInLeft_custom {
+  0% {
+    opacity: 0;
+    transform: translate3d(-15%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight_custom {
+  0% {
+    opacity: 0;
+    transform: translate3d(15%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
