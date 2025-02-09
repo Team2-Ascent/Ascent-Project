@@ -181,12 +181,3 @@ body {
 .client-carousel .owl-dots {
   display: none !important;
 }
-
-.radius-professional {
-  transition: all 0.5s;
-  border-radius: 50px 5px 50px 5px;
-}
-
-.cardPro:hover .radius-professional {
-  border-radius: 10px 50px 10px 50px;
-}
