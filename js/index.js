@@ -162,3 +162,45 @@ $(".icon-x").click(function () {
     ? $(".over-play").css("display", "none")
     : $(".over-play").css("display", "block");
 });
+
+//Faq js
+document.addEventListener("DOMContentLoaded", function () {
+  const headers = document.querySelectorAll(".faq-header");
+
+  headers.forEach((header) => {
+    header.addEventListener("click", function () {
+      // Đóng tất cả các nội dung FAQ trước khi mở cái mới
+      document.querySelectorAll(".faq-content").forEach((content) => {
+        content.style.maxHeight = null;
+      });
+
+      document.querySelectorAll(".faq-icon i").forEach((icon) => {
+        icon.classList.remove("fa-minus");
+        icon.classList.add("fa-plus");
+      });
+
+      document.querySelectorAll(".faq-icon").forEach((icon) => {
+        icon.classList.remove("bg-secondary");
+        icon.classList.add("bg-orange-500");
+      });
+
+      // Mở nội dung của thẻ được click
+      const content = this.nextElementSibling;
+      if (!content.style.maxHeight || content.style.maxHeight === "0px") {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } else {
+        content.style.maxHeight = null;
+      }
+
+      // Đổi icon
+      const icon = this.querySelector(".faq-icon i");
+      if (content.style.maxHeight) {
+        icon.classList.remove("fa-plus");
+        icon.classList.add("fa-minus");
+
+        this.querySelector(".faq-icon").classList.remove("bg-orange-500");
+        this.querySelector(".faq-icon").classList.add("bg-secondary");
+      }
+    });
+  });
+});

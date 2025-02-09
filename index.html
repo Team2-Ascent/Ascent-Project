@@ -51,6 +51,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- flowbite -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
     <!-- index css -->
     <link rel="stylesheet" href="./src/output.css" />
     <title>Ascent</title>
@@ -914,8 +921,109 @@
     <section id="program"></section>
     <section id="porfolio"></section>
     <section id="service"></section>
-    <section id="faq"></section>
-    <section id="professional">
+    <section id="faq">
+      <div class="max-w-[1280px] m-auto lg:flex">
+        <div class="faq-left">
+          <img src="./imgs/banner-1.png" alt="student" srcset="" />
+        </div>
+        <div class="faq-right lg:w-1/2 xl:w-1/2 xl:pt-16">
+          <div class="faq-title">
+            <h3 class="font-bubble text-xl text-secondary">Some Faq</h3>
+            <p class="font-jost text-3xl font-bold xl:pb-8">
+              Empowering Children Through Education Playful Mind
+            </p>
+          </div>
+          <div class="faq-content">
+            <div class="mt-6 space-y-4">
+              <!-- FAQ Item 1 -->
+              <div
+                class="faq-item border border-gray-300 rounded-lg overflow-hidden"
+              >
+                <button
+                  class="font-jost text-xl w-full flex justify-between items-center p-4 text-left font-semibold faq-header"
+                >
+                  Why do we have to go to school?
+                  <span
+                    class="faq-icon bg-orange-500 text-white px-3 py-1 rounded"
+                    ><i
+                      class="fa-solid fa-plus text-white"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                </button>
+                <div
+                  class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+                >
+                  <p class="p-4 text-gray-600">
+                    It is a long established fact that a reader will be
+                    distracted by the read content of a page when looking at its
+                    layout. Many desktop publish packages and web page editors
+                    now use Loremdefault model
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div
+                class="faq-item border border-gray-300 rounded-lg overflow-hidden"
+              >
+                <button
+                  class="font-jost text-xl w-full flex justify-between items-center p-4 text-left font-semibold faq-header"
+                >
+                  Why do we have to go to school?
+                  <span
+                    class="faq-icon bg-orange-500 text-white px-3 py-1 rounded"
+                    ><i
+                      class="fa-solid fa-plus text-white"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                </button>
+                <div
+                  class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+                >
+                  <p class="p-4 text-gray-600">
+                    It is a long established fact that a reader will be
+                    distracted by the read content of a page when looking at its
+                    layout. Many desktop publish packages and web page editors
+                    now use Loremdefault model
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div
+                class="faq-item border border-gray-300 rounded-lg overflow-hidden"
+              >
+                <button
+                  class="font-jost text-xl w-full flex justify-between items-center p-4 text-left font-semibold faq-header"
+                >
+                  Why do we have to go to school?
+                  <span
+                    class="faq-icon bg-orange-500 text-white px-3 py-1 rounded"
+                    ><i
+                      class="fa-solid fa-plus text-white"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                </button>
+                <div
+                  class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+                >
+                  <p class="p-4 text-gray-600">
+                    It is a long established fact that a reader will be
+                    distracted by the read content of a page when looking at its
+                    layout. Many desktop publish packages and web page editors
+                    now use Loremdefault model
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="professional" class="py-10">
       <div class="max-w-6xl mx-auto text-center">
         <h4
           class="text-secondary text-xl font-bubble wow wow animate__animated animate__fadeInUp"
@@ -923,18 +1031,20 @@
           Meet Our Professional
         </h4>
         <h2
-          class="text-3xl font-bold mt-2 font-jost wow animate__animated animate__fadeInUp"
+          class="text-3xl xl:pb-8 font-bold mt-2 font-jost wow animate__animated animate__fadeInUp"
         >
           Joyful Journeys Childcare and the<br />Of a Education
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 xl:pb-8"
+        >
           <!-- Card 1 -->
           <div
             class="cardPro bg-white shadow-xl p-6 border-2 border-transparent hover:border-bgGreen radius-professional transition-all duration-500"
           >
             <div class="rounded-2xl overflow-hidden">
               <img
-                src="https://ascent-tailwind.vercel.app/assets/images/team/professonal1.png"
+                src="/imgs/professonal1.png"
                 class="w-full h-64 object-cover radius-professional"
                 alt="Jane Cooper"
               />
@@ -981,7 +1091,7 @@
           >
             <div class="rounded-2xl overflow-hidden">
               <img
-                src="https://ascent-tailwind.vercel.app/assets/images/team/professonal1.png"
+                src="/imgs/professonal2.png"
                 class="w-full h-64 object-cover radius-professional"
                 alt="Jane Cooper"
               />
@@ -1028,7 +1138,7 @@
           >
             <div class="rounded-2xl overflow-hidden">
               <img
-                src="https://ascent-tailwind.vercel.app/assets/images/team/professonal1.png"
+                src="/imgs/professonal3.png"
                 class="w-full h-64 object-cover radius-professional"
                 alt="Jane Cooper"
               />
@@ -1991,7 +2101,9 @@
         autoplayTimeout: 4000,
       });
     </script>
+    <!-- flowbite -->
     <script src="./../node_modules/flowbite/dist/flowbite.min.js"></script>
+
     <script src="./js/index.js"></script>
     <script src="./js/mainBackToTop.js"></script>
     <script src="./js/util.js"></script>
