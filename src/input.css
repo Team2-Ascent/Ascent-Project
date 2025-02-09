@@ -191,6 +191,13 @@ body {
   gap: 5px;
 }
 
+@media screen and (max-width: 640px) {
+  #service .owl-dots {
+    position: absolute;
+    top: 10px;
+  }
+}
+
 #service .owl-dots .owl-dot.active span {
   width: 35px;
   height: 5px;
