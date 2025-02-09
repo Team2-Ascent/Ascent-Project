@@ -2318,17 +2318,7 @@ body {
   animation: left_right 2s linear infinite;
 }
 
-.before\:block::before {
-  content: var(--tw-content);
-  display: block;
-}
-
 .before\:hidden::before {
-  content: var(--tw-content);
-  display: none;
-}
-
-.after\:hidden::after {
   content: var(--tw-content);
   display: none;
 }
@@ -2552,6 +2542,10 @@ body {
     position: absolute;
   }
 
+  .md\:bottom-0 {
+    bottom: 0px;
+  }
+
   .md\:left-3 {
     left: 0.75rem;
   }
@@ -2566,10 +2560,6 @@ body {
 
   .md\:top-\[40\%\] {
     top: 40%;
-  }
-
-  .md\:bottom-0 {
-    bottom: 0px;
   }
 
   .md\:mx-2 {
@@ -2876,11 +2866,6 @@ body {
 
   .lg\:gap-1 {
     gap: 0.25rem;
-  }
-
-  .lg\:bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   }
 
   .lg\:px-10 {
