@@ -181,3 +181,7 @@ body {
 .client-carousel .owl-dots {
   display: none !important;
 }
+
+.professional-animal {
+  animation: left_right 2s linear infinite;
+}
